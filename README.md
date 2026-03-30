@@ -43,7 +43,7 @@ $ cd frontend
 $ npm install
 ```
 
-To avoid version conflicts and dependency issues, we have locked the versions of all packages and their dependencies in `package-lock.json`. The execution of the `npm install` command will, by default, install all packages using exactly the same versions specified in the `package-lock.json`.
+To avoid version conflicts and dependency issues, we have locked the versions of all packages and their dependencies in `package-lock.json`. The execution of the `npm install` command will, by default, install all packages using exactly the same versions specified in the `package-lock.json`. If encounter errors during `npm install` use `npm install --force`
 
 ### Put your OpenAI API Key
 
@@ -77,6 +77,6 @@ $ cd frontend
 $ npm start
 ```
 
-Your application should run on **port 3000** Go to [http://localhost:3000](http://localhost:3000) in your browser (Chrome recommended).
+Your application should run on **port 3000** Go to [http://localhost:3000](http://localhost:3000) in your browser (Chrome recommended). If encounter errors during this step, go to `frontend/package.json` and change start to `"start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start"` (mac users)
 
 ## Citation
