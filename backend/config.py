@@ -1,0 +1,2 @@
+
+API_KEY = "[Your OpenAI Key]"
